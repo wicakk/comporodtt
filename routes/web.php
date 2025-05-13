@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes(['register' => false]);
+// Auth::routes(['register' => false]);
+Auth::routes();
+
 
 Route::group(['middleware' => ['is_admin','auth'], 'prefix' => 'admin', 'as' => 'admin.'], function() {
     Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
@@ -27,6 +29,8 @@ Route::group(['middleware' => ['is_admin','auth'], 'prefix' => 'admin', 'as' => 
     Route::resource('categories', \App\Http\Controllers\Admin\CategoryController::class)->except('show');
     // blogs
     Route::resource('blogs', \App\Http\Controllers\Admin\BlogController::class)->except('show');
+    // product
+    Route::resource('products', \App\Http\Controllers\Admin\ProductController::class)->except('show');
     // profile
     Route::get('users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
@@ -47,3 +51,7 @@ Route::get('contact', function() {
 })->name('contact');
 // booking
 Route::post('booking', [App\Http\Controllers\BookingController::class, 'store'])->name('booking.store');
+// calcuator
+Route::get('calcuator-digital', function() {
+    return view('calcuator-digital');
+})->name('calcuator-digital');

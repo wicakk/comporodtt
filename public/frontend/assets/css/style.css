@@ -148,6 +148,10 @@ body.dark-theme {
   padding: 4.5rem 0 2rem;
 }
 
+.section__home {
+  padding: 3.5rem 0 2rem;
+}
+
 .section__title {
   font-size: 1.25rem;
   margin-bottom: 1rem;
@@ -284,7 +288,7 @@ body.dark-theme {
   display: inline-block;
   background: linear-gradient(101deg, #3858d6, #2948c7);
   color: #fff;
-  padding: 14px 28px;
+  padding: 8px 28px;
   border-radius: 0.5rem;
   font-size: 0.938rem;
   font-weight: 500;
@@ -331,6 +335,14 @@ body.dark-theme {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.bg__home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .islands__container {
   text-align: center;
   position: relative;
@@ -342,12 +354,17 @@ body.dark-theme {
 
 .islands__subtitle,
 .islands__title {
-  color: #f5fffe;
+  color: #10375C;
 }
 
 .islands__subtitle {
   font-size: 2rem;
   font-weight: var(--font-medium);
+}
+
+.islands__subtitle_nav {
+  font-weight: var(--font-medium);
+  color: #10375C;
 }
 
 .islands__title {
@@ -364,7 +381,7 @@ body.dark-theme {
   margin: auto;
   width: 100%;
   text-align: center;
-  color: #fff;
+  color: #10375C;
 }
 
 @media screen and (min-width: 768px) {
@@ -672,6 +689,19 @@ body.dark-theme {
   gap: 1.25rem 0.75rem;
 }
 
+.home__card {
+  display: block;
+  padding: 10px 10px 10px 10px;
+}
+.home__card-box {
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  padding: 1.25rem 0.75rem;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .contact__card-box {
   background-color: var(--body-color);
   border: 2px solid var(--border-color);
@@ -705,6 +735,22 @@ body.dark-theme {
   font-size: 0.938rem;
 }
 
+.home__card-title {
+  font-size: 0.938rem;
+  text-align: start;
+  
+}
+
+.choice__services {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.home__card-description {
+  font-size: 0.75rem;
+  text-align: start;
+}
+
 .contact__card-description {
   font-size: 0.75rem;
 }
@@ -713,6 +759,18 @@ body.dark-theme {
   font-size: 0.813rem;
   padding: 14px 0;
   width: 100%;
+  border-radius: 0.25rem;
+  background: var(--first-color-lighten);
+  color: var(--first-color);
+  font-weight: 600;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.annountment {
+  font-size: 0.813rem;
+  padding: 8px 0;
+  width: 50%;
   border-radius: 0.25rem;
   background: var(--first-color-lighten);
   color: var(--first-color);
@@ -1308,7 +1366,7 @@ body.dark-theme {
 
 .islands__subtitle,
 .islands__title {
-  color: #fff;
+  color: #10375C;
 }
 
 .islands__subtitle {
@@ -1386,6 +1444,15 @@ body.dark-theme {
   display: block;
   width: 100%;
   margin-top: 1rem;
+}
+
+.logo{
+  width: 30px;
+  height: 25px;
+}
+
+.text-title{
+  --title-color: hsl(228, 57%, 28%);
 }
 
 /*========== MEDIA QUERIES ==========*/

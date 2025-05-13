@@ -3,32 +3,195 @@
 @section('content')
 <!--==================== HOME ====================-->
 <section>
-    <div class="swiper-container">
+    <div class="swiper-container section__home">
         <div>
             <!--========== ISLANDS 1 ==========-->
             <section class="islands">
-                <img
-                    src="{{ asset('frontend/assets/img/hero.jpg') }}"
+                {{-- <img
+                    src="{{ asset('frontend/assets/img/bg-home.png') }}"
                     alt=""
                     class="islands__bg"
-                />
-                <div class="bg__overlay">
+                /> --}}
+                <div class="bg__home">
                     <div class="islands__container container">
                         <div
                             class="islands__data"
                             style="z-index: 99; position: relative"
                         >
                             <h2 class="islands__subtitle">
-                                Explore
+                                <div>
+                                    <button class="button annountment">New <span>We prideourselveson 24/7 customer care <i class='bx bx-right-arrow-alt' ></i></span></button>
+                                </div>
                             </h2>
                             <h1 class="islands__title">
-                                Wonderfull World
+                                Welcome!! 24/7
                             </h1>
                             <p class="islands__description">
-                                It's the perfect time travel and
-                                enjoy the <br />
-                                beauty of the world.
+                                We are committed to providing quality service around the clock. We are ready and waiting to assist you. 
+                                We pride ourselves on 24/7 customer service.
                             </p>
+                            <div class="home__card">
+                                <div class="home__card-box">
+                                <h2 class="choice__services">
+                                    Choice Services
+                                </h2>
+                                <!--==================== Services ====================-->
+                                <section class="services" id="services">
+                                    <div class="value__container container grid">
+                                        <div>
+                                            <a href="{{ route('calcuator-digital') }}">
+                                                <div class="contact__card-box">
+                                                    <div class="contact__card-info">
+                                                      <i class='bx bxl-google-cloud'></i>
+                                                      <div>
+                                                        <h3 class="home__card-title">CLOUD SOLUTIONS</h3>
+                                                        <p class="home__card-description">Here are the biggest enterprise
+                                                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                                      </div>
+                                                    </div>
+                                    
+                                                    <button class="button contact__card-button">Choice</button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="">
+                                                <div class="contact__card-box">
+                                                    <div class="contact__card-info">
+                                                      <i class='bx bx-desktop' ></i>
+                                                      <div>
+                                                        <h3 class="home__card-title">IT HELPDESK</h3>
+                                                        <p class="home__card-description">Here are the biggest enterprise
+                                                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                                      </div>
+                                                    </div>
+                                    
+                                                    <button class="button contact__card-button">Choice</button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        
+                                        
+                                        {{-- <div class="value__images">
+                                            <div class="value__orbe"></div>
+
+                                            <div class="value__img">
+                                                <img src="{{ asset('frontend/assets/img/team.jpg') }}" alt="" />
+                                            </div>
+                                        </div>
+
+                                        <div class="value__content">
+                                            <div class="value__data">
+                                                <span class="section__subtitle">Why Choose Us</span>
+                                                <h2 class="section__title">
+                                                    Experience That We Promise To You
+                                                </h2>
+                                                <p class="value__description">
+                                                    We have an unbreakable commitment to our brand values. They are our fundamental beliefs. They guide our actions and the way we serve our clients and engage with our communities.
+                                                </p>
+                                            </div>
+
+                                            <div class="value__accordion">
+                                                <div class="value__accordion-item">
+                                                    <header class="value__accordion-header">
+                                                        <i
+                                                            class="bx bxs-shield-x value-accordion-icon"
+                                                        ></i>
+                                                        <h3 class="value__accordion-title">
+                                                            COLLABURATION
+                                                        </h3>
+                                                        <div class="value__accordion-arrow">
+                                                            <i class="bx bxs-down-arrow"></i>
+                                                        </div>
+                                                    </header>
+
+                                                    <div class="value__accordion-content">
+                                                        <p class="value__accordion-description">
+                                                            Collaboration is an essential part of teamwork and helps a successful team function most effectively
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="value__accordion-item">
+                                                    <header class="value__accordion-header">
+                                                        <i
+                                                            class="bx bxs-x-square value-accordion-icon"
+                                                        ></i>
+                                                        <h3 class="value__accordion-title">
+                                                            ACCELERATION
+                                                        </h3>
+                                                        <div class="value__accordion-arrow">
+                                                            <i class="bx bxs-down-arrow"></i>
+                                                        </div>
+                                                    </header>
+
+                                                    <div class="value__accordion-content">
+                                                        <p class="value__accordion-description">
+                                                            Combines agility, automation, and insights to help businesses delivery.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="value__accordion-item">
+                                                    <header class="value__accordion-header">
+                                                        <i
+                                                            class="bx bxs-bar-chart-square value-accordion-icon"
+                                                        ></i>
+                                                        <h3 class="value__accordion-title">
+                                                            LISTEN
+                                                        </h3>
+                                                        <div class="value__accordion-arrow">
+                                                            <i class="bx bxs-down-arrow"></i>
+                                                        </div>
+                                                    </header>
+
+                                                    <div class="value__accordion-content">
+                                                        <p class="value__accordion-description">
+                                                            Connecting to clients is the based for us in making the best decisions.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="value__accordion-item">
+                                                    <header class="value__accordion-header">
+                                                        <i
+                                                            class="bx bxs-check-square value-accordion-icon"
+                                                        ></i>
+                                                        <h3 class="value__accordion-title">
+                                                            MODIFICATION
+                                                        </h3>
+                                                        <div class="value__accordion-arrow">
+                                                            <i class="bx bxs-down-arrow"></i>
+                                                        </div>
+                                                    </header>
+
+                                                    <div class="value__accordion-content">
+                                                        <p class="value__accordion-description">
+                                                            Altering, adjusting, and improving an existing thing to enhance its performance, functionality, reliability, or usability.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="value__accordion-item">
+                                                    <header class="value__accordion-header">
+                                                        <i
+                                                            class="bx bxs-check-square value-accordion-icon"
+                                                        ></i>
+                                                        <h3 class="value__accordion-title">
+                                                            SCALABILITY
+                                                        </h3>
+                                                        <div class="value__accordion-arrow">
+                                                            <i class="bx bxs-down-arrow"></i>
+                                                        </div>
+                                                    </header>
+
+                                                    <div class="value__accordion-content">
+                                                        <p class="value__accordion-description">
+                                                            New digital technologies allow businesses to scale up without significant interruptions or complex transitions.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> --}}
+                                    </div>
+                                </section>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -38,22 +201,49 @@
 </section>
 
 <!--==================== LOGOS ====================-->
-<section
-    class="logos"
-    style="margin-top: 9rem; padding-bottom: 3rem"
->
+<section class="logos">
+    <span class="section__subtitle" style="text-align: center"
+    >Client</span
+    >
+    <h2 class="section__title" style="text-align: center">
+        Our Partners
+    </h2>
     <div class="logos__container container grid">
         <div class="logos__img">
-            <img src="{{ asset('frontend/assets/img/tripadvisor.png') }}" alt="" />
+            <img src="{{ asset('frontend/assets/img/logo-derotirat.png') }}" alt="" />
         </div>
         <div class="logos__img">
-            <img src="{{ asset('frontend/assets/img/airbnb.png') }}" alt="" />
+            <img src="{{ asset('frontend/assets/img/logo-bpjsks.png') }}" alt="" />
         </div>
         <div class="logos__img">
             <img src="{{ asset('frontend/assets/img/booking.png') }}" alt="" />
         </div>
         <div class="logos__img">
-            <img src="{{ asset('frontend/assets/img/airasia.png') }}" alt="" />
+            <img src="{{ asset('frontend/assets/img/logo-kbbukopin.png') }}" alt="" />
+        </div>
+        <div class="logos__img">
+            <img src="{{ asset('frontend/assets/img/rs-fatmawati.png') }}" alt="" />
+        </div>
+        <div class="logos__img">
+            <img src="{{ asset('frontend/assets/img/logo-bpr-universal.png') }}" alt="" />
+        </div>
+        <div class="logos__img">
+            <img src="{{ asset('frontend/assets/img/logo-mib.png') }}" alt="" />
+        </div>
+        <div class="logos__img">
+            <img src="{{ asset('frontend/assets/img/logo-hamzah.png') }}" alt="" />
+        </div>
+        <div class="logos__img">
+            <img src="{{ asset('frontend/assets/img/amoro.png') }}" alt="" />
+        </div>
+        <div class="logos__img">
+            <img src="{{ asset('frontend/assets/img/logo-dtq.png') }}" alt="" />
+        </div>
+        <div class="logos__img">
+            <img src="{{ asset('frontend/assets/img/logo-loh-jinawi.png') }}" alt="" />
+        </div>
+        <div class="logos__img">
+            <img src="{{ asset('frontend/assets/img/logo-smu.png') }}" alt="" />
         </div>
     </div>
 </section>
@@ -102,6 +292,13 @@
     </div>
 </section>
 
+<!--==================== Background ====================-->
+<section class="section" id="bg-content">
+    <div class="container">
+        <img src="{{ asset('frontend/assets/img/bg-content-2.png') }}" alt="" />
+    </div>
+</section>
+
 <!--==================== VALUE ====================-->
 <section class="value section" id="value">
     <div class="value__container container grid">
@@ -120,9 +317,7 @@
                     Experience That We Promise To You
                 </h2>
                 <p class="value__description">
-                    We always ready to serve by providing the best
-                    service for you. We make a good choices to
-                    travel around the world.
+                    We have an unbreakable commitment to our brand values. They are our fundamental beliefs. They guide our actions and the way we serve our clients and engage with our communities.
                 </p>
             </div>
 
@@ -133,7 +328,7 @@
                             class="bx bxs-shield-x value-accordion-icon"
                         ></i>
                         <h3 class="value__accordion-title">
-                            Best places in the world
+                            COLLABURATION
                         </h3>
                         <div class="value__accordion-arrow">
                             <i class="bx bxs-down-arrow"></i>
@@ -142,9 +337,7 @@
 
                     <div class="value__accordion-content">
                         <p class="value__accordion-description">
-                            We provides the best places around the
-                            world and have a good quality of
-                            service.
+                            Collaboration is an essential part of teamwork and helps a successful team function most effectively
                         </p>
                     </div>
                 </div>
@@ -154,7 +347,7 @@
                             class="bx bxs-x-square value-accordion-icon"
                         ></i>
                         <h3 class="value__accordion-title">
-                            Affordable price for you
+                            ACCELERATION
                         </h3>
                         <div class="value__accordion-arrow">
                             <i class="bx bxs-down-arrow"></i>
@@ -163,8 +356,7 @@
 
                     <div class="value__accordion-content">
                         <p class="value__accordion-description">
-                            We try to make your budget fit with the
-                            destination that you want to go.
+                            Combines agility, automation, and insights to help businesses delivery.
                         </p>
                     </div>
                 </div>
@@ -174,7 +366,7 @@
                             class="bx bxs-bar-chart-square value-accordion-icon"
                         ></i>
                         <h3 class="value__accordion-title">
-                            Best plan for your time
+                            LISTEN
                         </h3>
                         <div class="value__accordion-arrow">
                             <i class="bx bxs-down-arrow"></i>
@@ -183,7 +375,7 @@
 
                     <div class="value__accordion-content">
                         <p class="value__accordion-description">
-                            Provides you with time properly.
+                            Connecting to clients is the based for us in making the best decisions.
                         </p>
                     </div>
                 </div>
@@ -193,7 +385,7 @@
                             class="bx bxs-check-square value-accordion-icon"
                         ></i>
                         <h3 class="value__accordion-title">
-                            Security guarantee
+                            MODIFICATION
                         </h3>
                         <div class="value__accordion-arrow">
                             <i class="bx bxs-down-arrow"></i>
@@ -202,8 +394,26 @@
 
                     <div class="value__accordion-content">
                         <p class="value__accordion-description">
-                            We make sure that our services have a
-                            good of security
+                            Altering, adjusting, and improving an existing thing to enhance its performance, functionality, reliability, or usability.
+                        </p>
+                    </div>
+                </div>
+                <div class="value__accordion-item">
+                    <header class="value__accordion-header">
+                        <i
+                            class="bx bxs-check-square value-accordion-icon"
+                        ></i>
+                        <h3 class="value__accordion-title">
+                            SCALABILITY
+                        </h3>
+                        <div class="value__accordion-arrow">
+                            <i class="bx bxs-down-arrow"></i>
+                        </div>
+                    </header>
+
+                    <div class="value__accordion-content">
+                        <p class="value__accordion-description">
+                            New digital technologies allow businesses to scale up without significant interruptions or complex transitions.
                         </p>
                     </div>
                 </div>
@@ -219,7 +429,7 @@
             >Our Blog</span
         >
         <h2 class="section__title" style="text-align: center">
-            The Best Trip For You
+            Blog posts about solutions for the digital era
         </h2>
 
         <div class="blog__content grid">

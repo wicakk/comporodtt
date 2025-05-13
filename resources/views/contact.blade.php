@@ -8,14 +8,14 @@
             <!--========== ISLANDS 1 ==========-->
             <section class="islands swiper-slide">
               <img
-                src="{{ asset('frontend/assets/img/contact-hero.jpg') }}"
+                src="{{ asset('frontend/assets/img/contact-bg.png') }}"
                 alt=""
                 class="islands__bg"
               />
               <div class="bg__overlay">
                 <div class="islands__container container">
                   <div class="islands__data">
-                    <h2 class="islands__subtitle">Need Travel</h2>
+                    <h2 class="islands__subtitle">Need Service</h2>
                     <h1 class="islands__title">Contact Us</h1>
                   </div>
                 </div>
