@@ -16,6 +16,7 @@
         "vite": "^4.5.14"
     },
     "dependencies": {
-        "lodash": "^4.17.21"
+        "lodash": "^4.17.21",
+        "schema": "latest_version_number"
     }
 }
