@@ -21,7 +21,7 @@ class UserFactory extends Factory
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
-            'password' => Hash::make(env('USER_PASSWORD', 'defaultPassword')), // password
+            'password' => bcrypt(env('DEFAULT_PASSWORD', 'fallbackPassword')), // password
             'remember_token' => Str::random(10),
         ];
     }
